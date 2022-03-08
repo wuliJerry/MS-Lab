@@ -5,11 +5,13 @@
 
 #include "mbed.h"
 
+//initialization
 PwmOut wave(D9);
 
 
 int main()
 {   
+    //generalize the square wave
     wave.period(0.001);
     wave.write(0.5);
     while(1);
